@@ -1,5 +1,7 @@
 from django.db import models
 from django.urls import reverse
+# add this import
+from datetime import date
 
 # A tuple of 2-tuples
 MEALS = (
@@ -24,6 +26,10 @@ class Finch(models.Model):
 
     def get_absolute_url(self):
         return reverse('detail', kwargs={'finch_id': self.id})
+    
+     # add this new method
+    def fed_for_today(self):
+        return self.feeding_set.filter(date=date.today()).count() >= len(MEALS)
     
 
 class Feeding(models.Model):
