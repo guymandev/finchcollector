@@ -32,7 +32,7 @@ def finches_detail(request, finch_id):
     return render(request, 'finches/detail.html', {
        'finch': finch,
        'feeding_form': feeding_form
-    })
+})
 
 class FinchCreate(CreateView):
    model = Finch
