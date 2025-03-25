@@ -55,7 +55,6 @@ SecretStorage==3.3.3
 six==1.17.0
 sortedcontainers==2.4.0
 sqlparse==0.5.3
-systemd-python==234
 toml==0.10.2
 typing_extensions==4.12.2
 ubuntu-advantage-tools==8001
