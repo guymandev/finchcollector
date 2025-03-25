@@ -6,7 +6,6 @@ CacheControl==0.14.2
 certifi==2025.1.31
 cffi==1.17.1
 charset-normalizer==3.4.1
-command-not-found==0.3
 cryptography==44.0.2
 cyclonedx-python-lib==9.1.0
 dbus-python==1.2.18
