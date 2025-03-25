@@ -1,1 +1,1 @@
-web: gunicorn finchcollector.wsgi
+web: gunicorn finchcollector.wsgi:application --log-file -
